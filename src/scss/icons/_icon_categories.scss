@@ -1,0 +1,153 @@
+@import "../base/px2rem";
+
+
+/*产品列表banner图=========================*/
+.product_banner{
+  width:100%;
+  z-index:100;
+  top:0;
+  height:px2rem(150);
+  background:url(../img/data_images/product_list_banner.jpg) no-repeat center;
+  background-size:cover;
+}
+//    图标说明:
+//    统一前缀: icon_cate_
+//                          激活态                 未激活态
+//    hx:海鲜       => icon_cate_hx_actived  icon_cate_hx_deactived
+//    dcxx:大厨小鲜 => icon_cate_dcxx_actived  icon_cate_dcxx_deactived
+//    dus:独食      => icon_cate_dus_actived  icon_cate_dus_deactived
+//    td:甜点       => icon_cate_td_actived  icon_cate_td_deactived
+//    shl:烧腊      => icon_cate_shl_actived  icon_cate_shl_deactived
+//    xp:新品       => icon_cate_xp_actived  icon_cate_xp_deactived
+//    jsh:酒水      => icon_cate_jsh_actived  icon_cate_jsh_deactived
+//    qc:青菜       => icon_cate_qc_actived  icon_cate_qc_deactived
+//    zsh:主食      => icon_cate_zsh_actived  icon_cate_zsh_deactived
+//    rl:日料       => icon_cate_rl_actived  icon_cate_rl_deactived
+//    bk:爆款       => icon_cate_bk
+//    llw:辣卤味    => icon_cate_llw
+//    zg: 尊贵      => icon_cate_zg
+
+.categories {
+  display:block;
+  width:px2rem(150);
+  height:px2rem(100);
+}
+.icon_categories {
+  display:block;
+  width:px2rem(150);
+  height:px2rem(100);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:px2rem(300);
+  background-image: url(../img/icon_categories/icon_categories_new.png);
+}
+
+// n * 150  +  25
+//0
+.icon_cate_mlhx {
+  background-position: px2rem(-150) px2rem(-25);
+}
+//1
+.icon_cate_dcxx {
+  background-position: px2rem(-150) px2rem(-175);
+}
+//2
+.icon_cate_td {
+  background-position: px2rem(-150) px2rem(-325);
+}
+//3
+.icon_cate_jsh {
+  background-position: px2rem(-150) px2rem(-475);
+}
+//4
+.icon_cate_qc {
+  background-position: px2rem(-150) px2rem(-625);
+}
+//5
+.icon_cate_rl {
+  background-position: px2rem(-150) px2rem(-775);
+}
+//6
+.icon_cate_shl {
+  background-position: px2rem(-150) px2rem(-925);
+}
+//7
+.icon_cate_zsh {
+  background-position: px2rem(-150) px2rem(-1075);
+}
+//8
+.icon_cate_bk {
+  background-position: px2rem(-150) px2rem(-1375);
+}
+//9
+.icon_cate_llw {
+  background-position: px2rem(-150) px2rem(-1225);
+}//10
+.icon_cate_zg {
+  background-position: px2rem(-150) px2rem(-1525);
+}
+
+
+
+.menu_list_item.active {
+  //0
+  .icon_cate_mlhx {
+    background-position: 0 px2rem(-25);
+  }
+  //1
+  .icon_cate_dcxx {
+    background-position: 0 px2rem(-175);
+  }
+  //2
+  .icon_cate_td {
+    background-position: 0 px2rem(-325);
+  }
+  //3
+  .icon_cate_jsh {
+    background-position: 0 px2rem(-475);
+  }
+  //4
+  .icon_cate_qc {
+    background-position: 0 px2rem(-625);
+  }
+  //5
+  .icon_cate_rl {
+    background-position: 0 px2rem(-775);
+  }
+  //6
+  .icon_cate_shl {
+    background-position: 0 px2rem(-925);
+  }
+  //7
+  .icon_cate_zsh {
+    background-position: 0 px2rem(-1075);
+  }
+  //8
+  .icon_cate_bk {
+    background-position: px2rem(0) px2rem(-1375);
+  }
+  //9
+  .icon_cate_llw {
+    background-position: px2rem(0) px2rem(-1225);
+  }//10
+  .icon_cate_zg {
+    background-position: px2rem(0) px2rem(-1525);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

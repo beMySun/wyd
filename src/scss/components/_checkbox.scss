@@ -1,0 +1,75 @@
+@import "../base/px2rem";
+@mixin checkedCon($fs:18px) {
+  &:before {
+    display: inline-block;
+
+    margin-top: 0;
+    margin-left: 6px;
+    content: '√';
+    color: #fff;
+    font-size: $fs;
+    margin-top: -1px;
+    margin-left: 5px;
+    //content: '√';
+    color: #f4c600;
+    font-size: 14px;
+  }
+}
+$duration: .4s;
+.mui-checkbox {
+  top : 50%;
+  margin-top: -13px;
+  -webkit-appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: solid 1px #d9d9d9;
+  border-radius: 50%;
+  background-clip: padding-box;
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+  //margin-top: -3px;
+  &:focus {
+    outline: 0 none;
+    outline-offset: -2px
+  }
+  &:checked {
+    @include checkedCon();
+    border: 7px solid #f4c600;
+    color: #fff;
+  }
+  &:disabled {
+    background-color: #d9d9d9;
+    border: solid 1px #d9d9d9;
+    @include checkedCon();
+  }
+  &.checkbox-green:checked {
+    //background-color: #5cb85c;
+    border: 1px solid #f4c600;
+
+  }
+  &.checkbox-orange:checked {
+    background-color: #f0ad4e;
+  }
+  &.checkbox-s {
+    width: 19px;
+    height: 19px;
+    @include checkedCon(13px);
+  }
+}
+
+.mui-checkbox-anim{
+  //border等其他元素不做过渡效果，增加视觉差，更有动画效果
+  transition: background-color ease $duration/2;
+
+}
+.mui-checkbox-con {
+  text-align: right;
+  label {
+    width: 150px;
+    height: px2rem(120);
+    display: inline-block;
+  }
+}
